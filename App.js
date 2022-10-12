@@ -26,7 +26,7 @@ const giveaway = document.querySelector('.giveaway')
 const deadline = document.querySelector('.deadline')
 const items = document.querySelectorAll('.deadline-format h4')
 
-const fDate = new Date(2022,09,15,22,30,0);
+const fDate = new Date(2022,09,16,22,30,0);
 const year = fDate.getFullYear()
 const hours = fDate.getHours()
 const minutes = fDate.getMinutes()
