@@ -26,7 +26,7 @@ const giveaway = document.querySelector('.giveaway')
 const deadline = document.querySelector('.deadline')
 const items = document.querySelectorAll('.deadline-format h4')
 
-const fDate = new Date(2022,10,15,22,30,0);
+const fDate = new Date(2022,09,15,22,30,0);
 const year = fDate.getFullYear()
 const hours = fDate.getHours()
 const minutes = fDate.getMinutes()
@@ -77,5 +77,7 @@ const fTime = fDate.getTime()
          deadline.innerHTML = `<h4 class ="expired">sorry, this giveaway has expired</h4>`
      }
  }
- 
+ let countdown = setInterval(getRemaindingTime, 1000);
+ //set initial values
+ getRemaindingTime(); 
 
